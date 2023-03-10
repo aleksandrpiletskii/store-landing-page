@@ -106,7 +106,7 @@ a {
     margin-top: 32px;
 }
 
-.for-item {
+.for__item {
     height: 415px;
     grid-column: span 4;
     font-style: normal;
