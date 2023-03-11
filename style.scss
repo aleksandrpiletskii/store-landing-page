@@ -1,0 +1,279 @@
+@import "vars";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+a {
+    text-decoration: none;
+}
+
+.top {
+    height: 735px;
+    background-image: url(images/background_top.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    &__text {
+        font-style: normal;
+        font-weight: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        color: $color-text;
+        margin-bottom: 16px;
+    }
+}
+
+.header {
+    height: 77px;
+    display: flex;
+    border-bottom: 0.5px solid rgba (255, 255, 255, 0.8);
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    &__input {
+        width: 288px;
+        height: 41px;
+        border: 1px solid $color-text;
+        box-sizing: border-box;
+        border-radius: 20px;
+        background-color: transparent;
+        outline: none;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        color: $color-text;
+        padding-left: 32px;
+        padding-right: 32px;
+        &__input::placeholder {
+            color: $color-text;
+        }
+    }
+}
+
+.menu {
+    display: flex;
+    gap: 32px;
+    &__link {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: $color-text;
+    }
+}
+
+.title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 70px;
+    color: $color-text;
+    margin-top: 64px;
+    margin-bottom: 16px;
+}
+
+.link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: $color-text;
+}
+
+.for-box {
+    padding-top: 64px;
+}
+
+.for {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(12, 1fr);
+    margin-top: 32px;
+}
+
+.for__item {
+    height: 415px;
+    grid-column: span 4;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 41px;
+    color: $color-text;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.for__item_big {
+    grid-column: span 6;
+}
+
+.for__item_1 {
+    background-image: url(images/relax.jpg);
+}
+
+.for__item_2 {
+    background-image: url(images/work.jpg);
+}
+
+.for__item_3 {
+    background-image: url(images/kitchen.jpg);
+}
+
+.for__item_4 {
+    background-image: url(images/kids.jpg);
+}
+
+.for__item_5 {
+    background-image: url(images/bathroom.jpg);
+}
+
+.product {
+    width: 378px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product__img {
+    width: 100%;
+}
+
+.product__box-price {
+    display: flex;
+    gap: 32px;
+}
+
+.product-box {
+    padding-top: 64px;
+}
+
+.product__content {
+    margin-top: 32px;
+    display: flex;
+    column-gap: 32px;
+    row-gap: 56px;
+    flex-wrap: wrap;
+}
+
+.product__name {
+    margin-top: 10px;
+    margin-bottom: 9px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.product__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #888888;
+    margin-bottom: 12px;
+}
+
+.heading {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    color: #000000;
+}
+
+.footer {
+    background: #F7F6F6;
+    padding-top: 32px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 64px;
+}
+
+.footer__content {
+    width: 792px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer__info {
+    display: flex;
+    gap: 129px;
+}
+
+.footer__item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer__icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer__form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-radius: 20px;
+}
+
+.footer__button {
+    background: rgba(222, 215, 215, 0.41);
+    border: 1px solid $color-text;
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    padding: 13px 85px;
+}
+
+.footer__input {
+    background: $color-text;
+    border: 1px solid #C4C4C4;
+    border-radius: 20px;
+    padding-left: 24px;
+    padding-right: 102px;
+    padding-top: 12px;
+    padding-bottom: 14px;
+}
+
+.footer__input::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #C4C4C4;
+}
+
+.footer__form p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+}
+
+@import "cart"
